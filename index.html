@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergio Portofolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    
+
+<body style="margin: 0;">
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo-icon"></div>
+        <ul>
+            <li class="nav-item">
+                <a class="nav-item" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item" href="#Facilities">Facilities</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item" href="#form">Form</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-item" href="#message-us">Message Us</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <hr>
+
+    <section class="section-container">
+        <!-- home -->
+        <section id="home">
+            <header>
+                <h1 style="margin-left: 30px; margin-top: 50px; margin-bottom: 0;">Hello,<span id="name-banner"></span> Welcome to my website</h1>
+            </header>
+            <article>
+                <p style="margin-left: 30px; margin-top: 0px; margin-bottom: 30px;"></p>
+                <div class="banner-container"></div>
+            </article>
+        </section>
+        <!-- Akhir Home -->
+
+        <hr>
+
+        <!-- Facilities -->
+        <section id="Facilities">
+            <nav style="justify-content: center;">
+                <h2>Facilities</h2>
+            </nav>
+            <br>
+            <br>
+            <article class="facilities-list">
+                <div>
+                    <div id="facilities-list-icon1" class="border-facilities-list"></div>
+                    <h5>contoh 1</h5>
+                </div>
+                <div>
+                    <div id="facilities-list-icon2" class="border-facilities-list"></div>
+                    <h5>contoh2</h5>
+                </div>
+                <div>
+                    <div id="facilities-list-icon3" class="border-facilities-list"></div>
+                    <h5>contoh3</h5>
+                </div>
+            </article>
+        </section>
+        <!-- Akhir Facilities -->
+        <br>
+        <section class="section-container">
+            <br>
+            
+            <hr>
+            <!-- form -->
+            <section id="form">
+                <nav style="justify-content: center;">
+                    <h2>Form</h2>
+                </nav>
+                
+                <section class="Form-section">
+                    <form id="message-form">
+                        <section>
+                            <article class="form">
+                                <table>
+                                    <tr class="table-row">
+                                        <td class="label" style="color: black;">NAMA</td>
+                                        <td>:</td>
+                                        <td class="input-table"><input id="name" type="text" class="input-text" name="name-input" required></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="label" style="color: black;">TANGGAL LAHIR</td>
+                                        <td>:</td>
+                                        <td class="input-table"><input id="birth-date" type="date" class="input-text" name="birth-date" required></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="label" style="color: black;">JENIS KELAMIN</td>
+                                        <td>:</td>
+                                        <td class="input-table">
+                                            <input id="laki-laki" type="radio" value="laki-laki" name="gender" required>
+                                            <label for="laki-laki">Laki-laki</label>
+                                            <input id="perempuan" type="radio" value="perempuan" name="gender" required>
+                                            <label for="perempuan">Perempuan</label>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="label" style="color: black;"><b>PESAN</b></td>
+                                        <td>:</td>
+                                        <td class="input-table"><textarea rows="7" placeholder="Ketik disini" class="input-text" style="width: 100%; background-color: rgba(255, 255, 255, 0.575);" name="message"></textarea></td>
+                                    </tr>
+                                </table>
+                                <input type="button" id="btn-submit" name="submit" value="Kirim Pesan">
+                            </article>
+                        </section>
+                    </form>
+                    <!-- result -->
+                    <section class="result-container">
+                        <div class="form-result" id="hasil">
+                            <p style="color: black;">Nama : <span id="sender-full-name"></span></p>
+                            <p style="color: black;">Tanggal Lahir : <span id="sender-birth-date"></span></p>
+                            <p style="color: black;">Jenis Kelamin : <span id="sender-gender"></span></p>
+                            <p style="color: black;">Pesan : <span id="sender-full-messages"></span></p>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Akhir Form -->
+
+       
+        <hr>
+        <!-- Message Us -->
+        <nav style="justify-content: center;" id="message-us">
+            <h2>Message Us</h2>
+        </nav>
+        <section class="contact-section">
+            <p>call : 081526061594</p>
+            <p>email : sergioarabaa8@gmail.com</p>
+            <p></p>
+        </section>
+        <!-- Akhir Message Us -->
+
+        <footer class="footer">
+            <p>Create By Sergio</p>
+        </footer>
+    </section>
 </body>
 </html>
+
+<script src="js/script.js"></script>
